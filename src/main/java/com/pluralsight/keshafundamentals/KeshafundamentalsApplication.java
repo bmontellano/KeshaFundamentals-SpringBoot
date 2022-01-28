@@ -24,7 +24,9 @@ public class KeshafundamentalsApplication {
 		log.info("Hello! Running Keshafundamentals Application.");
 	}
 
-	
+	//We no longer need this CommandLineRunner
+	//We are adding dummy data in data.sql file in ./resources folder
+	/*
 	@Bean
 	public CommandLineRunner demo(ApplicationRepository appRepository, TicketRepository ticketRepository ) {
 		return args -> {
@@ -34,14 +36,13 @@ public class KeshafundamentalsApplication {
 			appRepository.save(new Application("Notifications","karen.kane","Application to send alerts and notifications to users."));
 
 			ticketRepository.save(new Ticket("Error One", "description", app1, "open"));
-			/*
-			for (Application application : appRepository.findAll()) {
-				log.info("The application is: " + application.toString());
-			}
-			*/
 			
+			// for (Application application : appRepository.findAll()) {
+			// 	log.info("The application is: " + application.toString());
+			// }
 		};
 	}
+	*/
 
 
 }
