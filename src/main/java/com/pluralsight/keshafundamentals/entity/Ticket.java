@@ -42,8 +42,6 @@ public class Ticket {
         this.status = status;
     }
 
-    
-
     public String getStatus() {
         return status;
     }

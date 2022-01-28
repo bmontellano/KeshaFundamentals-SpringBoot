@@ -1,9 +1,10 @@
 package com.pluralsight.keshafundamentals.service;
 
+import java.util.List;
 import com.pluralsight.keshafundamentals.entity.Release;
 
 public interface ReleaseService {
-    Iterable<Release> listReleases();
+    List<Release> listReleases();
 }
 
 

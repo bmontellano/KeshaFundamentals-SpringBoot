@@ -1,5 +1,7 @@
 package com.pluralsight.keshafundamentals.service;
 
+import java.util.List;
+
 import com.pluralsight.keshafundamentals.entity.Ticket;
 import com.pluralsight.keshafundamentals.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +13,8 @@ public class TicketServiceImpl implements TicketService {
     private TicketRepository ticketRepository;
 
     @Override
-    public Iterable<Ticket> listTickets() {
-        return ticketRepository.findAll();
+    public List<Ticket> listTickets() {
+        return (List <Ticket>) ticketRepository.findAll();
     }
 
 }
