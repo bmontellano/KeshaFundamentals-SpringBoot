@@ -22,7 +22,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 //NOTE - THYMELEAF WILL NOT WORK WITH @RestController. Find solution later
 //Please uncomment below for Thymeleaf implementation
-
+/*
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 @Controller
@@ -64,9 +64,7 @@ public class TzaController {
         return "releases";
     }
 }
-
-
-/*
+*/
 @RestController
 @RequestMapping("/tza")
 public class TzaController {
@@ -117,4 +115,3 @@ public class TzaController {
     }
 
 }
-*/
